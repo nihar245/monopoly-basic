@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Board</title>
+    <link rel="stylesheet" href="board.css">
+</head>
+<body>
+    <h1 class="game-title">MONOPOLY</h1>
+    <div class="board">
+        <div class="space corner go" data-position="0">GO</div>
+        <div class="space corner jail" data-position="7">Jail</div>
+        <div class="space corner free-parking" data-position="14">Free Parking</div>
+        <div class="space corner go-to-jail" data-position="21">Go To Jail</div>
+
+        <div class="space property brown" data-position="1" data-price="6000" data-rent="600">
+            <div class="content">
+                <div class="name">Mumbai</div>
+                <div class="price">₹6000</div>
+                <div class="rent">Rent: ₹600</div>
+            </div>
+        </div>
+        <div class="space community-chest" data-position="2">Community Chest</div>
+        <div class="space property brown" data-position="3" data-price="5500" data-rent="550">
+            <div class="content">
+                <div class="name">Delhi</div>
+                <div class="price">₹5500</div>
+                <div class="rent">Rent: ₹550</div>
+            </div>
+        </div>
+        <div class="space tax income" data-position="4">Income Tax</div>
+        <div class="space railroad" data-position="5" data-price="2500" data-rent="250">
+            <div class="content">
+                <div class="name">Western Railway</div>
+                <div class="price">₹2500</div>
+                <div class="rent">Rent: ₹250</div>
+            </div>
+        </div>
+        <div class="space property light-blue" data-position="6" data-price="4000" data-rent="400">
+            <div class="content">
+                <div class="name">Kolkata</div>
+                <div class="price">₹4000</div>
+                <div class="rent">Rent: ₹400</div>
+            </div>
+        </div>
+
+        <!-- Right Column (6 spaces) -->
+        <div class="space jail-location" data-position="8">JAIL</div>
+        <div class="space chance" data-position="9">Chance</div>
+        <div class="space property light-blue" data-position="10" data-price="3500" data-rent="350">
+            <div class="content">
+                <div class="name">Chennai</div>
+                <div class="price">₹3500</div>
+                <div class="rent">Rent: ₹350</div>
+            </div>
+        </div>
+        <div class="space railroad" data-position="11" data-price="2500" data-rent="250">
+            <div class="content">
+                <div class="name">Central Railway</div>
+                <div class="price">₹2500</div>
+                <div class="rent">Rent: ₹250</div>
+            </div>
+        </div>
+        <div class="space property pink" data-position="12" data-price="4500" data-rent="450">
+            <div class="content">
+                <div class="name">Bangalore</div>
+                <div class="price">₹4500</div>
+                <div class="rent">Rent: ₹450</div>
+            </div>
+        </div>
+        <div class="space utility electric" data-position="13" data-price="1500" data-rent="150">
+            <div class="content">
+                <div class="name">Electric Company</div>
+                <div class="price">₹1500</div>
+                <div class="rent">Rent: ₹150</div>
+            </div>
+        </div>
+
+        <!-- Bottom Row (6 spaces) -->
+        <div class="space property pink" data-position="15" data-price="4200" data-rent="420">
+            <div class="content">
+                <div class="name">Hyderabad</div>
+                <div class="price">₹4200</div>
+                <div class="rent">Rent: ₹420</div>
+            </div>
+        </div>
+        <div class="space property pink" data-position="16" data-price="3000" data-rent="300">
+            <div class="content">
+                <div class="name">Ahmedabad</div>
+                <div class="price">₹3000</div>
+                <div class="rent">Rent: ₹300</div>
+            </div>
+        </div>
+        <div class="space railroad" data-position="17" data-price="2500" data-rent="250">
+            <div class="content">
+                <div class="name">Northern Railway</div>
+                <div class="price">₹2500</div>
+                <div class="rent">Rent: ₹250</div>
+            </div>
+        </div>
+        <div class="space property orange" data-position="18" data-price="2800" data-rent="280">
+            <div class="content">
+                <div class="name">Pune</div>
+                <div class="price">₹2800</div>
+                <div class="rent">Rent: ₹280</div>
+            </div>
+        </div>
+        <div class="space community-chest" data-position="19">Community Chest</div>
+        <div class="space property orange" data-position="20" data-price="2500" data-rent="250">
+            <div class="content">
+                <div class="name">Surat</div>
+                <div class="price">₹2500</div>
+                <div class="rent">Rent: ₹250</div>
+            </div>
+        </div>
+
+        <!-- Left Column (6 spaces) -->
+        <div class="space property orange" data-position="22" data-price="2200" data-rent="220">
+            <div class="content">
+                <div class="name">Jaipur</div>
+                <div class="price">₹2200</div>
+                <div class="rent">Rent: ₹220</div>
+            </div>
+        </div>
+        <div class="space chance" data-position="23">Chance</div>
+        <div class="space property red" data-position="24" data-price="2000" data-rent="200">
+            <div class="content">
+                <div class="name">Lucknow</div>
+                <div class="price">₹2000</div>
+                <div class="rent">Rent: ₹200</div>
+            </div>
+        </div>
+        <div class="space property red" data-position="25" data-price="1800" data-rent="180">
+            <div class="content">
+                <div class="name">Chandigarh</div>
+                <div class="price">₹1800</div>
+                <div class="rent">Rent: ₹180</div>
+            </div>
+        </div>
+        <div class="space utility water" data-position="26" data-price="1500" data-rent="150">
+            <div class="content">
+                <div class="name">Water Works</div>
+                <div class="price">₹1500</div>
+                <div class="rent">Rent: ₹150</div>
+            </div>
+        </div>
+        <div class="space property red" data-position="27" data-price="1500" data-rent="150">
+            <div class="content">
+                <div class="name">Bhopal</div>
+                <div class="price">₹1500</div>
+                <div class="rent">Rent: ₹150</div>
+            </div>
+        </div>
+        <div class="space property yellow" data-position="28" data-price="1200" data-rent="120">
+            <div class="content">
+                <div class="name">Indore</div>
+                <div class="price">₹1200</div>
+                <div class="rent">Rent: ₹120</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="board.js"></script>
+</body>
+</html>
+
